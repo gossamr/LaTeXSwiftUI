@@ -40,13 +40,10 @@ internal struct HorizontalImageScroller: View {
   // MARK: View body
   
   var body: some View {
-    GeometryReader { geometry in
-//      ScrollView(.horizontal, showsIndicators: showsIndicators) {
-        HStack(alignment: .center) { image }
-          .frame(minWidth: geometry.size.width)
-//      }
-//      .scrollBounceBehavior(.basedOnSize)
-    }
-    .frame(height: height)
+      image
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .frame(height: height)
+        .padding(.horizontal, 16)
   }
 }
