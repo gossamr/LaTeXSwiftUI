@@ -15,8 +15,8 @@ let package = Package(
       targets: ["LaTeXSwiftUI"]),
   ],
   dependencies: [
-     .package(url: "https://github.com/colinc86/MathJaxSwift", from: "3.4.0"),
-     .package(url: "https://github.com/swhitty/SwiftDraw", from: "0.20.1"),
+     .package(url: "https://github.com/colinc86/MathJaxSwift", exact: "3.4.0"),
+     .package(url: "https://github.com/swhitty/SwiftDraw", exact: "0.25.3"),
      .package(url: "https://github.com/Kitura/swift-html-entities", from: "4.0.1")
   ],
   targets: [
